@@ -1,0 +1,271 @@
+/*
+    Project: Song Converter
+  Names: Nivedha Srinivasan, Oreoluwa Alao
+  Date: 6/14/20
+  Task Description: Stylesheet for most song.html
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    scroll-behavior: smooth;
+    font-family: 'Baloo Da 2'
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+
+}
+
+html{
+    background-color: white;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    position: relative;
+}
+body{
+    margin:0px;
+}
+
+.cover {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.60)), url(../pics/piano.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    background-attachment: fixed;
+    position:relative;
+    height:100vh;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+nav{
+    margin: 0;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 10px;
+    transition: border-bottom 0.3s;
+    padding:0;
+    background: none;
+    border: none;
+}
+
+
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #6c5ce7;
+}
+
+.main-nav li:nth-child(even){
+    padding: 0;
+    background:0;
+    border: none;
+}
+
+.search{
+    height:8%;
+}
+
+.form{
+    background-color: red;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.whitespace{
+    width: 20%;
+}
+
+.text{
+    background-color:aliceblue;
+    align-self: center;
+    height:70%;
+    flex-grow: 2;
+    margin-left: 20%;
+}
+
+
+#searchBtnDiv{
+    width: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBtn{
+    background-color:blueviolet;
+    height: 70%;
+}
+
+
+.song-display{
+    height: 50%;
+    background: white;
+    width: 60%;
+    left: 20%;
+    position: relative;
+}
+
+.results{
+    background-color: white;
+    display: flex;
+}
+
+.form-title {
+    font-size: 200%;
+    align-content: center;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    background-color: #6c5ce7;
+    color: white;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    border-radius: 0px;
+}
+
+.gradient {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0)), url(../pics/contactbg.jpg);
+    margin:0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 20px;
+    background: #f6f6f6;
+    font-size: 20px;
+    color: #555;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+    height: 80px;
+}
+
+li:nth-child(even){
+    padding: 20px;
+    background: #f2f2f2;
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    color: #999;
+}
+
+li button{
+    font-size: 16px;
+    margin-top: 6px;
+    color: #9185ec;
+}
+
+li button:hover{
+    color:white;
+}
+
+li div{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+    padding-top: 5px;
+    height:20%;
+}
+
+
+li:hover,
+li:active{
+    background: #3e3299;
+
+    color: white;
+}
+
+.main-nav li:hover,
+.main-nav li:active{
+    background: none;
+    padding: 0;
+}
+
+#view{
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    background: rgba(255,255,255,0.6);
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+    padding-top: 10px;
+    height:20%;
+}
+
+#search-form{
+    height: 7%;
+    color: white;
+    width: 60%;
+    left: 20%;
+    position: relative;
+    text-align: center;
+    font-size: 120%;
+}
+
+#title:hover,
+#title:active,
+#title:focus{
+    border-bottom: 2px solid #3e3299;
+    transition: 0.2s;
+}
+
+#tags:hover,
+#tags:active,
+#tags:focus{
+    border-bottom: 2px solid #3e3299;
+    transition: 0.2s;
+}

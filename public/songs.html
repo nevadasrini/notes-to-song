@@ -1,0 +1,70 @@
+<!--
+  Project: Song Converter
+  Names: Nivedha Srinivasan, Oreoluwa Alao
+  Date: 6/14/20
+  Task Description: Page used to view songs
+-->
+
+<!--SONGS-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Songs</title>
+        <meta name="description" content="Turn your notes into a catchy, easy to memorize song!">
+        <!--LINK TO STYLESHEETS-->
+        <link rel="stylesheet" href="songs.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    </head>
+    <body class="gradient">
+        <!--NAVBAR-->
+        <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="convert.html">Convert</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+        </nav><br><br><br><br>
+        <!--TITLE-->
+        <div class="form-title">
+            MY SONGS
+        </div><br>
+        <!--SONG DISPLAY: div where songs are populated-->
+        <div class="song-display">
+        <!--LIST CONTAINING SONGS: populated by app.js-->
+        <ul id="song-list">
+        </ul>
+        </div>
+
+        <!--SCRIPTS-->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC8BTtaT2r4Qjrj28pPytHkh3mH3SuqZ3U",
+            authDomain: "test-1f44a.firebaseapp.com",
+            databaseURL: "https://test-1f44a.firebaseio.com",
+            projectId: "test-1f44a",
+            storageBucket: "test-1f44a.appspot.com",
+            messagingSenderId: "1015966710229",
+            appId: "1:1015966710229:web:93111e0199c9e33373e55c",
+            measurementId: "G-8HMGBLMQHC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        const auth = firebase.auth()
+        </script>
+        <script src="auth.js"></script>
+        <script src="index.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

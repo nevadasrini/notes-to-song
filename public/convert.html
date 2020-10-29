@@ -1,0 +1,100 @@
+<!--
+  Project: Song Converter
+  Names: Nivedha Srinivasan, Oreoluwa Alao
+  Date: 6/14/20
+  Task Description: Page where users submit text, syllable scheme, tags, and rhyme scheme
+-->
+
+<!--CONVERTER PAGE-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Song Converter</title>
+        <meta name="description" content="Turn your notes into a catchy, easy to memorize song!">
+        <!--LINK TO STYLESHEETS-->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--SECTION 1: cover image-->
+        <div class="nv-cover">
+            <nav>
+                <a href="index.html"><img src="pics/logo.png" alt="DND Logo" class="nv-logo"></a>
+            </nav>
+            <div class="nv-header">
+                <h1>SONG CONVERTER.</h1>
+                <h3>Enter your notes into the text box below. </h3> 
+                    <h3>Turn it into a catchy, easily memorizable song! </h3>
+                    <!--button that takes you to the converter-->
+                <a href="#converter" class="nv-btn nv-btn-full">Try it now!</a>
+            </div>
+            <div class="nv-image">
+                <img src="pics/computer.png">
+            </div>
+        </div>
+        <!--SECTION 2: converter section-->
+        <div class="nv-converter" id="converter">
+            <div class="nv-text"><h2>CONVERTER</h2></div>
+            <div class="nv-explanation"><h3>Paste your notes, specify your scheme, add tags, and click submit!</h3></div>
+            <!--FORM where users input their information (later read by app2.js and sent to the Firebase)-->
+            <form id="convert">
+                <label>Title: &nbsp; </label>
+                    <input type="text" name="name" required><br>
+                <textarea name="textarea" cols="30" rows="5" placeholder="Your notes." type="text" required></textarea><br>
+                <label>Syllables: &nbsp; </label>
+                    <input type="text" name="syllables" required>
+                <label>Rhyme Scheme: &nbsp;</label>
+                <select name="rhyme">
+                    <option value="aabb" selected>aabb</option>
+                    <option value="aaaa">aaaa</option>
+                    <option value="abab">abab</option>
+                    <option value="aaba">aaba</option>
+                </select>
+                    <label>Tags: &nbsp;</label>
+                    <input type="text" name="tags" list="tags" required>
+                    <datalist id="tags">
+                        <option>Math</option>
+                        <option>Chemistry</option>
+                        <option>Physics</option>
+                        <option>Biology</option>
+                        <option>English</option>
+                        <option>History</option>
+                        <option>Computer science</option>
+                    </datalist>
+                    <br>
+                <input type="submit" value="Submit" class="nv-searchButton">
+            </form> 
+        </div>
+
+        <!--SCRIPTS-->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC8BTtaT2r4Qjrj28pPytHkh3mH3SuqZ3U",
+            authDomain: "test-1f44a.firebaseapp.com",
+            databaseURL: "https://test-1f44a.firebaseio.com",
+            projectId: "test-1f44a",
+            storageBucket: "test-1f44a.appspot.com",
+            messagingSenderId: "1015966710229",
+            appId: "1:1015966710229:web:93111e0199c9e33373e55c",
+            measurementId: "G-8HMGBLMQHC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        </script>
+        <script src="auth.js"></script>
+        <script src="app2.js"></script>
+    </body> 
+</html>

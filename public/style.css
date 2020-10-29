@@ -1,0 +1,564 @@
+/*
+    Project: Song Converter
+  Names: Nivedha Srinivasan, Oreoluwa Alao
+  Date: 6/14/20
+  Task Description: Stylesheet for most HTML pages
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    scroll-behavior: smooth;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+
+}
+
+html{
+    background-color: white;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    position: relative;
+}
+body{
+    margin:0px;
+}
+
+.nv-cover {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.60)), url(pics/piano.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    background-attachment: fixed;
+    position:relative;
+    height:100vh;
+}
+
+.nv-main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 0;
+    margin-right: 40px;
+    background: none;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    position: relative;
+    top: 50%;
+}
+
+
+.nv-nav{
+    margin: 0;
+    background: none;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    padding: none;
+    margin-bottom: 0;
+    font-size: 50%;
+}
+
+.nv-main-nav li {
+    display: inline-block;
+    margin-left: 10px;
+    transition: border-bottom 0.3s;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    padding: none;
+}
+
+.nv-main-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    padding: none;
+    font-size: 250%;
+}
+
+.nv-main-nav li a:hover,
+.nv-main-nav li a:active{
+    transform: translate(0%, -5%);
+    border-bottom: 2px solid #6c5ce7;
+    transition: 0.2s
+}
+
+.nv-header {
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+    position:relative;
+    top:35%;
+    transform: translate(0, -50%);
+    width: 50%;
+    float:left;
+}
+
+h1 {
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    color: white;
+    font-weight: 100;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 300%;
+}
+
+h3 {
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom:20px;
+    padding:0;
+}
+
+.nv-btn:link,
+.btn:visited{
+    display: inline-block;
+    border-radius: 200px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-right: 20px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    box-shadow: 13px 18px 23px -2px rgba(0,0,0,0.75);
+}
+
+.nv-btn:hover,
+.nv-btn:active{
+    transform: translate(0, 3px);
+}
+
+.nv-btn-full:link,
+.nv-btn-full:visited{
+    background-color: #6c5ce7;
+    color: white;
+    border: 1px solid #6c5ce7;
+}
+
+
+.nv-btn-ghost:link,
+.nv-btn-ghost:visited{
+    color: #ec2127;
+    border: 1px solid #6c5ce7;
+}
+
+.nv-btn-full:hover,
+.nv-btn-full:active{
+    background-color: #3e3299;
+    border: 1px solid #3e3299;
+    
+}
+
+
+.nv-btn-ghost:hover,
+.nv-btn-ghost:active{
+    background-color: #3e3299;
+    border: 1px solid #3e3299;
+    color: white;
+}
+.nv-image {
+    width:30%;
+    position:relative;
+    float:left;
+
+}
+
+.nv-converter {
+    position: relative;
+    margin:0;
+    height: 100vh;
+}
+
+.nv-text {
+    text-align: center;
+    background-color: #6c5ce7;
+}
+
+h2 {
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    color: white;
+    font-weight: 100;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 250%;
+}
+
+.nv-explanation h3 {
+    color: black;
+}
+
+.nv-explanation {
+    margin-top: 2%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+input[type=text] {
+    width: 10%;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    height: 5%;
+    margin-bottom: 0;
+    border-bottom: 2px solid #6c5ce7;
+}
+
+input[type=text]:hover,
+input[type=text]:active{
+    border-bottom: 2px solid #3e3299;
+}
+
+form {
+    align-content: center;
+    text-align: center;
+    height: 70%;
+}
+
+textarea {
+    width: 70%;
+    border: 2px solid #6c5ce7;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 8px;
+    height: 70%;
+}
+
+textarea:focus,
+textarea:active{
+    border-color: #3e3299;
+    box-shadow: 0 0 8px 0 #6c5ce7;
+}
+
+input[type=submit]{
+    display: inline-block;
+    border-radius: 200px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 40px;
+    margin-right: 20px;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+    background-color: #6c5ce7;
+    color: white;
+    border: 1px solid #6c5ce7;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active{
+    transform: translate(0, 3px);
+    background-color: #3e3299;
+    border: 1px solid #3e3299;
+}
+
+input[type=number]{
+    width: 5%;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    height: 5%;
+    margin-bottom: 0;
+    border-bottom: 2px solid #6c5ce7;
+}
+
+input[type=number]:hover,
+input[type=number]:active{
+    border-bottom: 2px solid #3e3299;
+}
+.nv-logo {
+    width:8%;
+    margin: 2%;
+}
+
+select {
+    width: 5%;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    border:none;
+    outline:none;
+}
+
+option{
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    border: 0px;
+    outline: 0px;
+}
+
+option:active,
+option:hover{
+    background-color: #6c5ce7;
+}
+
+label {
+    position:relative;
+    display: inline;
+    margin-left:2%;
+}
+
+.nv-slide-header {
+    background-image: url(pics/classes.png);
+    margin:0;
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), white);
+}
+
+.nv-mySlides {
+    display: none;
+    width:100%;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+}
+
+.nv-header2 {
+    height: 400px;
+    margin-top: 0px;
+    margin-left: 0;
+    padding: 20px;
+    position:relative;
+    top:50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    float:left;
+    text-align: center;
+}
+
+.nv-header2 h1 {
+    font-size: 500%;
+}
+
+.nv-cover2 {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0.65)), url(pics/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    background-attachment: fixed;
+    position:relative;
+    width:100%;
+}
+
+.nv-header2 img {
+    filter: brightness(100%);
+    margin-top:3%;
+}
+
+.nv-header2 img:hover {
+    filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.5s ease;
+    transform: translate(0%,3%);
+}
+.nv-problem-box {
+    z-index: 400;
+    position: absolute;
+    top: 17%;
+    left: 22%;
+    margin: 0;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+.nv-problem {
+    position: absolute;
+    width: 100%;
+    background: rgba(108, 92, 231, 0.9);
+    color: white;
+    font-size: 200%;
+    padding: 1.8% 4%;
+}
+
+.nv-problem-statement {
+    background: rgba(0, 0, 0, 0.64);
+    width: 100%;
+    margin-top: 10.2%;
+    position: absolute;
+    color: white;
+    padding: 2% 4%;
+    text-align: left;
+    font-size: 130%;
+}
+
+.nv-center {
+    position:relative;
+    left: 35%;
+    margin-bottom: 4%;
+}
+
+body {
+    width:100%;
+}
+
+.nv-form-title {
+    font-size: 200%;
+    align-content: center;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive, 'Helvetica Neue', Arial;
+    background-color: #6c5ce7;
+    color: white;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    border-radius: 20px;
+}
+
+.nv-gradient {
+    background-image: linear-gradient(#000, rgba(0, 0, 0, 0)), url(pics/contactbg.jpg);
+    margin:0;
+    padding: 0;
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.nv-contact {
+    background-color: white;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    font-family: 'Baloo Da 2';
+    border-radius: 20px;
+    height: 100%;
+}
+
+.nv-searchButton {
+    margin-top:0;
+}
+
+.nv-song-display{
+    height: 50%;
+    background: white;
+    width: 60%;
+    left: 20%;
+    position: relative;
+}
+
+.lavender{
+    background: #6c5ce7;
+    background-color: #6c5ce7
+    ! important;
+}
+
+.lavender:hover{
+    background-color: #3e3299
+    ! important;
+}
+
+.song-header{
+    background: #6c5ce7;
+    background-color: #6c5ce7;
+    color:white;
+    font-size: 250%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.song-header img{
+    width: 20%;
+    position:relative;
+    left: 2%;
+    margin-top: 1.5%;
+    float: left;
+    width: 40px;
+}
+
+.song-header img:hover,
+.song-header img:active{
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+
+#song-title{
+    font-family: 'Baloo Da 2'
+}
+
+.song-body{
+    padding: 5% 20%;
+    font-size: 120%;
+    text-align: center;
+    font-family: 'Baloo Da 2';
+    line-break: 2px;
+}
+
+.how-it-works{
+    height: 260vh;
+    background: #6c5ce7;
+    overflow:hidden;
+}
+
+html { overflow-x: hidden !important; }
+
+.step1-img{
+    width:25%;
+    margin-left:20%;
+    margin-top:2%;
+    position:relative;
+    float:left;
+}
+
+.step1-text{
+    width:30%;
+    margin-left:10%;
+    margin-top:2%;
+    position:relative;
+    float:left;
+    color:white;
+}
+
+.step2-text{
+    width:30%;
+    margin-left:20%;
+    margin-top:2%;
+    position:relative;
+    float:left;
+    color:white;
+    line-height: 1.6;
+}
+
+
+#up-arrow{
+    width:20%;
+    right:50%;
+}
+
+h4{
+    line-height: 1.6;
+}
+
+.step2-img{
+    width:27%;
+    margin-left:10%;
+    margin-top:2%;
+    position:relative;
+    float:left;
+}
+
+.insde{
+    align-content:center;
+    text-align:center;
+}
